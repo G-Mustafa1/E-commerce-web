@@ -12,7 +12,11 @@
    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .item{
-   box-shadow: rgb(157, 157, 184) 0px 7px 29px 0px;
+   box-shadow: rgb(157, 157, 184) 5px 7px 29px 5px;
+}
+.item:hover{
+   box-shadow: rgb(3, 128, 245) 5px 7px 29px 5px;
+   transition: 1.1;
 }
 .card img{
    filter: drop-shadow(10px 10px 5px #d3d3d3);
