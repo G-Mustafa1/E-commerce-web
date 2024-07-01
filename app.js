@@ -179,10 +179,18 @@ function cards() {
         <div class="name"><b>Name:</b> ${key.title}</div>
         <div class="category"><b>Category</b> : ${key.category}</div>
         <div class="price"><b>Price:</b> $${key.price} <span>Rate: ${key.rating.rate}</span> <div>
-        <button onclick="cart1('${key.image}','${key.title}','${key.category}','${key.price}')" class="btn1 btn-outline-success">Add to cart</button>
+        <button onclick="add_to_cart()" class="btn1 btn-outline-success">Add to cart</button>
     </div>
     `
     main.appendChild(div)
   }
 }
 cards()
+
+function add_to_cart(){
+  Swal.fire({
+    title: "Add to cart",
+    // text: "That thing is still around?",
+    icon: "success"
+  });
+}
